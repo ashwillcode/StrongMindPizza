@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page build for StrongMind interview project">
+    <meta name="robots" content="index, follow">
+	<meta name="author" content="Ashley Williams">
+    <title>StrongMind Pizza</title>
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image"  content="">
+    <meta property="og:description" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image"  content="">
+
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="x" type="image/x-icon">
+    
+
+</head>
+<body>
+    <a id="skip" href="#main-content">Skip to Main Content</a>
+    <header>
+        <!-- Logo square -->
+        <svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+            <text x="60" y="60" font-family="arial" font-size="24" fill="black" text-anchor="middle" dominant-baseline="middle">Logo</text>
+        </svg>
+        <nav>
+            <h2 class="sr-only">Main Navigation</h2>
+             <div class="off-screen-menu">
+                <ul id="menu" role="menubar">
+                    <li class="active" role="presentation">
+                        <a href="index.html" role="menuitem">Link1</a></li>
+                    <li role="presentation">
+                        <a href=""  role="menuitem">Link2</a></li>
+                    <li role="presentation">
+                        <a href="" role="menuitem">Link3</a></li>
+                </ul>
+            </div>
+            <ul id="menu2" role="menubar">
+                <li class="active" role="presentation">
+                    <a href="index.html" role="menuitem">Link1</a></li>
+                <li role="presentation">
+                    <a href=""  role="menuitem">Link2</a></li>
+                <li role="presentation">
+                    <a href="" role="menuitem">Link3</a></li>
+            </ul>
+            <div class="nav">
+                <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav> 
+    </header>
+    <main>
+        <h1>Pizza Creation</h1>
+        <div id="pizzaviewingwindow">
+            <svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+                <rect width="300" height="300" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+                <text x="160" y="160" font-family="arial" font-size="24" fill="black" text-anchor="middle" dominant-baseline="middle">Pizza Viewing Window</text>
+            </svg>
+        </div>
+        <div class="checkbox-sections">
+            <section id="toppings">
+                <h2>Toppings</h2>
+                <div class="toppings">
+                    <ul>
+                        <li><input type="checkbox" id="anchovies"> <label for="anchovies">Anchovies</label></li>
+                        <li><input type="checkbox" id="artichokes"> <label for="artichokes">Artichokes</label></li>
+                        <li><input type="checkbox" id="bacon"> <label for="bacon">Bacon</label></li>
+                        <li><input type="checkbox" id="basil"> <label for="basil">Basil</label></li>
+                        <li><input type="checkbox" id="blackolives"> <label for="blackolives">Black olives</label></li>
+                        <li><input type="checkbox" id="chicken"> <label for="chicken">Chicken</label></li>
+                        <li><input type="checkbox" id="freshtomatoes"> <label for="freshtomatoes">Fresh tomatoes</label></li>
+                        <li><input type="checkbox" id="garlic"> <label for="garlic">Garlic</label></li>
+                        <li><input type="checkbox" id="greenpeppers"> <label for="greenpeppers">Green peppers</label></li>
+                        <li><input type="checkbox" id="groundbeef"> <label for="groundbeef">Ground beef</label></li>
+                        <li><input type="checkbox" id="ham"> <label for="ham">Ham</label></li>
+                        <li><input type="checkbox" id="jalapenos"> <label for="jalapenos">Jalapeños</label></li>
+                        <li><input type="checkbox" id="mushrooms"> <label for="mushrooms">Mushrooms</label></li>
+                        <li><input type="checkbox" id="onions"> <label for="onions">Onions</label></li>
+                        <li><input type="checkbox" id="pepperoni"> <label for="pepperoni">Pepperoni</label></li>
+                        <li><input type="checkbox" id="pineapple"> <label for="pineapple">Pineapple</label></li>
+                        <li><input type="checkbox" id="redonions"> <label for="redonions">Red onions</label></li>
+                        <li><input type="checkbox" id="sausage"> <label for="sausage">Sausage</label></li>
+                        <li><input type="checkbox" id="spinach"> <label for="spinach">Spinach</label></li>
+                    </ul>
+                </div>
+            </section>
+            <div id="crustsauce-container">
+                <section id="crusts">
+                    <h2>Crusts</h2>
+                    <div class="crusts">
+                        <ul>
+                            <li><input type="checkbox" id="cauliflowercrust"> <label for="cauliflowercrust">Cauliflower Crust</label></li>
+                            <li><input type="checkbox" id="deepdishcrust"> <label for="deepdishcrust">Deep Dish Crust</label></li>
+                            <li><input type="checkbox" id="flatbreadcrust"> <label for="flatbreadcrust">Flatbread Crust</label></li>
+                            <li><input type="checkbox" id="glutenfreecrust"> <label for="glutenfreecrust">Gluten-Free Crust</label></li>
+                            <li><input type="checkbox" id="stuffedcrust"> <label for="stuffedcrust">Stuffed Crust</label></li>
+                            <li><input type="checkbox" id="thickcrust"> <label for="thickcrust">Thick Crust</label></li>
+                            <li><input type="checkbox" id="thincrust"> <label for="thincrust">Thin Crust</label></li>
+                            <li><input type="checkbox" id="wholewheatcrust"> <label for="wholewheatcrust">Whole Wheat Crust</label></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="sauces">
+                    <h2>Sauces</h2>
+                    <div class="sauces">
+                        <ul>
+                            <li><input type="checkbox" id="alfredosauce"> <label for="alfredosauce">Alfredo Sauce</label></li>
+                            <li><input type="checkbox" id="bbqsauce"> <label for="bbqsauce">BBQ Sauce</label></li>
+                            <li><input type="checkbox" id="buffalosauce"> <label for="buffalosauce">Buffalo Sauce</label></li>
+                            <li><input type="checkbox" id="garlicsauce"> <label for="garlicsauce">Garlic Sauce</label></li>
+                            <li><input type="checkbox" id="pestosauce"> <label for="pestosauce">Pesto Sauce</label></li>
+                            <li><input type="checkbox" id="ranchsauce"> <label for="ranchsauce">Ranch Sauce</label></li>
+                            <li><input type="checkbox" id="tomatosauce"> <label for="tomatosauce">Tomato Sauce</label></li>
+                            <li><input type="checkbox" id="whitesauce"> <label for="whitesauce">White Sauce</label></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section id="submit">
+            <h2>Submit</h2>
+            <input type="text" id="nameinput" placeholder="Enter a name" required>
+        <div class="button-container">
+            <button id="addbutton">Add</button>
+            <button id="clearbutton">Clear</button>
+        </div>
+        </section>
+        <section id="pizzarecipies-container">
+            <h2>Pizza Recipies</h2>
+            <div class="pizzarecipies-container">
+                <div class="pizzainfo-container">
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+                    </svg>
+                    <div class="pizzainfo">
+                        <p>"Name"</p>
+                        <img src="images/edit-svgrepo-com.svg" alt="edit icon">
+                    </div>
+                </div>
+                <div class="pizzainfo-container">
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+                    </svg>
+                    <div class="pizzainfo">
+                        <p>"Name"</p>
+                        <img src="images/edit-svgrepo-com.svg" alt="edit icon">
+                    </div>
+                </div>
+                <div class="pizzainfo-container">
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+                    </svg>
+                    <div class="pizzainfo">
+                        <p>"Name"</p>
+                        <img src="images/edit-svgrepo-com.svg" alt="edit icon">
+                    </div>
+                </div>
+                <div class="pizzainfo-container">
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+                    </svg>
+                    <div class="pizzainfo">
+                        <p>"Name"</p>
+                        <img src="images/edit-svgrepo-com.svg" alt="edit icon">
+                    </div>
+                </div>
+                <div class="pizzainfo-container">
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+                    </svg>
+                    <div class="pizzainfo">
+                        <p>"Name"</p>
+                        <img src="images/edit-svgrepo-com.svg" alt="edit icon">
+                    </div>
+                </div>
+                <div class="pizzainfo-container">
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+                    </svg>
+                    <div class="pizzainfo">
+                        <p>"Name"</p>
+                        <img src="images/edit-svgrepo-com.svg" alt="edit icon">
+                    </div>
+                </div>
+                <div class="pizzainfo-container">
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+                    </svg>
+                    <div class="pizzainfo">
+                        <p>"Name"</p>
+                        <img src="images/edit-svgrepo-com.svg" alt="edit icon">
+                    </div>
+                </div>
+                <div class="pizzainfo-container">
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" x="10" y="10" rx="20" ry="20" fill="#58a4b0" />
+                    </svg>
+                    <div class="pizzainfo">
+                        <p>"Name"</p>
+                        <img src="images/edit-svgrepo-com.svg" alt="edit icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2024</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/tota11y.min.js"></script>
+</body>
+</html>

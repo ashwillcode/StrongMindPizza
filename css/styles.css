@@ -1,0 +1,316 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* main code */
+
+
+:root{
+    --pink: #e34a6f;
+    --white: #ffffff;
+    --black: #000000;
+    --lightpink: #f7b2bd;
+    --violet: #544e61; 
+    --blue: #58a4b0;
+    --cream: #f1fec6;
+    --fontFamilyHeader: 'Franklin Gothic Medium', Arial, sans-serif;
+    --fontFamilyParagraph: Arial, sans-serif;
+}
+
+script {
+    display: none;
+}
+#skip {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+header {
+    background-color: var(--lightpink);
+}
+header svg {
+    padding-top: 10px;
+}
+
+/* nav code */
+
+.sr-only {
+    display: none;
+}
+nav {
+    z-index: 100;
+}
+#menu2{
+    display: none;
+}
+
+.off-screen-menu {
+    background-color: var(--cream);
+    height:150vh;
+    width: 100%;
+    max-width:235px;
+    top: 0px;
+    right: -450px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    transition: 1s ease;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+.nav {
+    display: flex;
+}
+.hamburger-menu {
+    height: 50px;
+    width: 40px;
+    margin-right: auto;
+    position: absolute; 
+    top: 40px;
+    right: 15px;
+}
+.hamburger-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: var(--violet);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+
+}
+.hamburger-menu span:nth-child(1) {
+    top: 25%;
+}
+.hamburger-menu span:nth-child(3) {
+    top: 75%;
+}
+.hamburger-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: var(--violet);
+}
+.hamburger-menu.active span:nth-child(2) {
+   opacity: 0;
+}
+.hamburger-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: var(--violet);
+}
+nav ul {
+    list-style: none;
+    padding-top: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--violet);
+    font-family: var(--fontFamilyParagraph);
+    font-size: 24px;
+    transition: color .5s ease;
+}
+nav li:nth-child(1) {
+    margin-top: 65px;
+}
+nav li {
+    padding:20px 0;
+}
+nav a:hover {
+    color:var(--blue);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--fontFamilyHeader);
+    color: var(--violet);
+    padding: 30px 0px;
+}
+#pizzaviewingwindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#toppings, #crusts, #sauces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#toppings h2, #crusts h2, #sauces h2 {
+    font-size: 24px;
+    font-family: var(--fontFamilyHeader);
+    margin-top: 30px;
+    color: var(--violet);
+    margin-right: 150px;
+}
+.toppings, .crusts, .sauces{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    min-width: 300px;
+    height: 175px;
+    padding: 10px 0px;
+    margin: 15px 0px;
+}
+.toppings ul, .crusts ul, .sauces ul {
+    margin: 5px 0px;
+}
+.toppings li, .crusts li, .sauces li {
+    margin: 10px 0px;
+}
+.toppings label, .crusts label, .sauces label {
+    font-size: 16px;
+    color: var(--violet);
+    font-family: var(--fontFamilyParagraph);
+}
+#submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#submit h2 { 
+    display: none;
+}
+#nameinput {
+    padding: 5px;
+    width: 300px;
+    font-size: 16px;
+    font-family: var(--fontFamilyParagraph);
+}
+.button-container {
+    margin: 15px 0px 45px 0;
+}
+#addbutton, #clearbutton {
+    width: 155px;
+    padding:5px;
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--violet);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: var(--fontFamilyParagraph);
+}
+.pizzarecipies-container {
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    height: 250px;
+}
+#pizzarecipies-container h2 {
+    font-size: 24px;
+    font-family: var(--fontFamilyHeader);
+    margin: 30px 75px 30px 0px;
+    color: var(--violet);
+    text-align: center;
+}
+.pizzainfo-container {
+    margin: 0 15px;
+}
+.pizzainfo-container img{
+    width: 15px;
+    height: auto;
+}
+.pizzainfo {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.pizzainfo p {
+    margin-right: 65px;
+}
+
+
+
+footer {
+    background-color: var(--lightpink);
+    padding: 30px 0px;
+}
+footer p {
+    text-align: center;
+}
+
+@media screen and (min-width: 575px) {
+    #pizzaviewingwindow {
+        float: left;
+        margin-left: 85px;
+    }
+    #crustsauce-container {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #sauces {
+        margin-left: 85px;
+    }
+    #submit {
+        margin-top: 55px;
+    }
+    #nameinput {
+        width: 675px;
+    }
+    #addbutton, #clearbutton {
+        width: 345px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+
+}
