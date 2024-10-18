@@ -232,13 +232,14 @@ h1 {
     display: none;
 }
 #nameinput {
+    margin-top: 20px;
     padding: 5px;
     width: 300px;
     font-size: 16px;
     font-family: var(--fontFamilyParagraph);
 }
 .button-container {
-    margin: 15px 0px 45px 0;
+    margin: 15px 0px 25px 0;
 }
 #addbutton, #clearbutton {
     width: 155px;
@@ -300,14 +301,13 @@ footer p {
         float: left;
         margin-left: 85px;
     }
-    #crustsauce-container {
-        margin-top: 100px;
+    .saucetopping-container {
         display: flex;
-        flex-direction: row;
+        margin-top: 50px;
         justify-content: center;
-    }
-    #sauces {
-        margin-left: 85px;
+        align-items: center;
+        margin-left: 25px;
+        gap: 66px;
     }
     #submit {
         margin-top: 55px;
@@ -368,13 +368,14 @@ footer p {
         display: flex;
     
     }
-    #crustsauce-container {
+    .saucetopping-container {
         margin-top: 0px;
-        margin-left: 45px;
+        margin-left: 25px;
+        gap: 0;
     }
-    #sauces {
+    #crusts {
         margin: 0px;
-        margin-left: 50px;
+        margin-left: 25px;
     }
     #toppings {
         margin-left: 25px;
