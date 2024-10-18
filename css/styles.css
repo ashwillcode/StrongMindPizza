@@ -174,6 +174,9 @@ nav li {
 nav a:hover {
     color:var(--blue);
 }
+.search1, .search2 {
+    display: none;
+}
 
 h1 {
     text-align: center;
@@ -275,9 +278,6 @@ h1 {
 .pizzainfo p {
     margin-right: 65px;
 }
-
-
-
 footer {
     background-color: var(--lightpink);
     padding: 30px 0px;
@@ -287,6 +287,15 @@ footer p {
 }
 
 @media screen and (min-width: 575px) {
+    .search2 {
+        display: flex;
+        max-height: 25px;
+        margin-top: 55px;
+    }
+    .logosearch-container {
+        display: flex;
+    }
+    
     #pizzaviewingwindow {
         float: left;
         margin-left: 85px;
@@ -312,5 +321,67 @@ footer p {
 }
 
 @media screen and (min-width: 920px) {
+    .search2 {
+        display: none;
+    }
+    .search1 {
+        display: flex;
+        max-height: 25px;
+        margin-top: 55px;
+        margin-left: 25px;
+        margin-right: 400px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav{
+        display: none;
+    }
 
+    nav li:nth-child(1) {
+        margin-top: 0;
+    }
+
+    #menu2{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 50px;
+
+        margin-right: 35px;
+    }
+    #menu2 li a {
+        font-family: var(--fontFamilyHeader);
+        font-size: 24px;
+        color: var(--violet);
+        padding: 12px;
+    }
+    #menu2 li a:hover {
+        color:var(--blue);
+    }
+
+    #pizzaviewingwindow {
+        margin-left: 100px;
+    }
+    .checkbox-sections {
+        display: flex;
+    
+    }
+    #crustsauce-container {
+        margin-top: 0px;
+        margin-left: 45px;
+    }
+    #sauces {
+        margin: 0px;
+        margin-left: 50px;
+    }
+    #toppings {
+        margin-left: 25px;
+    }
+    #submit {
+        margin-top: 35px;
+        margin-left: 275px;
+    }
+    
 }
